@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annabel's Project 3</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="module" src="js/main.js"></script>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+    
+    <header>VICTORIA'S SECRET<span>Fashion Show 2012</span></header>
+     
+    <main id="display">
+
+        <div>
+        <section class="col text">
+            <h1>Taking a Deeper Look into the Runway</h1>
+            <p>The Victoria's Secret Fashion Show was a previously annual event sponsored by the lingerie brand, Victoria's Secret. The fashion show showcases and promotes their brand's products in glamourous settings. This event is also highly known for it's well-known models and music performances by famous artists.</p>
+    
+            <p>The video below is presenting one of the music performances of the Victoria's Secret Fashion Show in 2012 in New York City. While most people may recognized the singer, Rihanna, they would not know the names of the models walking down the runway. As you watch the music performance, information about each model will pop up! Enjoy the video!</p>
+        </section> 
+
+        <section class="col runway">
+
+            <video id="video" class="rihanna" controls>
+                <source src="assets/rihanna.mp4" type="video/mp4">
+                <source src="assets/rihanna.webm" type="video/webm">
+                <track id="en" kind="captions" label="English" srclang="en" src="captions/rihanna.vtt" default>
+            </video>
+
+            <div class="video_controls">
+                <form action="video_form">
+                    <fieldset>
+                        <legend>Playback Controls</legend>
+                        <input type="button" id="play_button" value="Play" >
+						<input type="button" id="pause_button" value="Pause" >
+						<input type="button" id="mute" value="Mute" >
+						<input type="button" id="unmute" value="Unmute" >
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Playback Speed</legend>
+                        <input type="button" id="slomo_button" value="Slomo" >
+						<input type="button" id="norm_button" value="Normal" >
+                        <input type="button" id="ff_button" value="Fast" >
+                    </fieldset>
+                </form>
+            </div>
+
+        </section>
+        </div>
+
+       <section class="col wiki">
+        <iframe id="web" src="info.html" title="models"></iframe>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="ftext">
+        <p class="fp">"This fictitious website was created as an academic exercise for the Diablo Valley College course, ARTDM-174: Web and Mobile Design With Java Script. In no way should this content be considered or used as a source of factual public information."</p>
+
+        <a class="home" href="/artdm174">Click Here To Go Back to Jump Page!</a>
+        </div>
+    </footer>
+
+</body>
+</html>
